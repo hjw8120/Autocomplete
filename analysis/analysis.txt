@@ -1,0 +1,161 @@
+Hannah Wang
+hjw16
+
+Copy paste results from running benchmark
+for each of three files (see code)
+
+String fname = "data/threeletterwords.txt"; 
+
+init time: 0.01593	for BruteAutocomplete
+init time: 0.01313	for BinarySearchAutocomplete
+init time: 0.1196	for HashListAutocomplete
+search	size	#match	BruteAutoc	BinarySear	HashListAu
+	17576	50	0.00291363	0.00870146	0.00041091
+	17576	50	0.00063160	0.00156526	0.00000884
+a	676	50	0.00042239	0.00013682	0.00000839
+a	676	50	0.00061629	0.00019917	0.00000843
+b	676	50	0.00071794	0.00024357	0.00001006
+c	676	50	0.00071991	0.00018599	0.00000951
+g	676	50	0.00069701	0.00020465	0.00001110
+ga	26	50	0.00038528	0.00005016	0.00000893
+go	26	50	0.00037031	0.00006213	0.00000758
+gu	26	50	0.00038062	0.00006034	0.00000842
+x	676	50	0.00042437	0.00012797	0.00000798
+y	676	50	0.00068933	0.00021522	0.00001111
+z	676	50	0.00040159	0.00012515	0.00000831
+aa	26	50	0.00069456	0.00006814	0.00001339
+az	26	50	0.00062693	0.00008853	0.00001052
+za	26	50	0.00117617	0.00005775	0.00001050
+zz	26	50	0.00074045	0.00003555	0.00000788
+zqzqwwx	0	50	0.00080554	0.00008274	0.00000870
+size in bytes=246064	 for BruteAutocomplete
+size in bytes=246064	 for BinarySearchAutocomplete
+size in bytes=1092468	 for HashListAutocomplete
+
+
+		fname = "data/fourletterwords.txt";
+		
+			
+init time: 0.1308	for BruteAutocomplete
+init time: 0.1225	for BinarySearchAutocomplete
+init time: 1.461	for HashListAutocomplete
+search	size	#match	BruteAutoc	BinarySear	HashListAu
+	456976	50	0.02021567	0.03301266	0.00039996
+	456976	50	0.01028938	0.03359663	0.00001620
+a	17576	50	0.01304347	0.00064391	0.00001324
+a	17576	50	0.00711517	0.00036782	0.00000976
+b	17576	50	0.00738451	0.00058282	0.00001245
+c	17576	50	0.00693922	0.00023895	0.00000962
+g	17576	50	0.00506166	0.00028688	0.00001206
+ga	676	50	0.00574651	0.00010587	0.00001157
+go	676	50	0.00572166	0.00006287	0.00000882
+gu	676	50	0.00925922	0.00009398	0.00001832
+x	17576	50	0.00568724	0.00040452	0.00001366
+y	17576	50	0.00511403	0.00023850	0.00001001
+z	17576	50	0.00588671	0.00019363	0.00000977
+aa	676	50	0.00783376	0.00007936	0.00002936
+az	676	50	0.00655976	0.00006999	0.00001133
+za	676	50	0.00509694	0.00006662	0.00001483
+zz	676	50	0.00575338	0.00007083	0.00001189
+zqzqwwx	0	50	0.00601890	0.00004167	0.00000462
+size in bytes=7311616	 for BruteAutocomplete
+size in bytes=7311616	 for BinarySearchAutocomplete
+size in bytes=40322100	 for HashListAutocomplete
+
+		fname = "data/alexa.txt";
+		
+init time: 0.9045	for BruteAutocomplete
+init time: 2.634	for BinarySearchAutocomplete
+init time: 17.83	for HashListAutocomplete
+search	size	#match	BruteAutoc	BinarySear	HashListAu
+	1000000	50	0.04037687	0.04261528	0.00044230
+	1000000	50	0.01420398	0.00706971	0.00001041
+a	69464	50	0.03189614	0.00098200	0.00001283
+a	69464	50	0.01580225	0.00066971	0.00001043
+b	56037	50	0.01313360	0.00056869	0.00001010
+c	65842	50	0.01391548	0.00097115	0.00001435
+g	37792	50	0.01324634	0.00059269	0.00001324
+ga	6664	50	0.01442109	0.00021101	0.00001261
+go	6953	50	0.01348817	0.00013391	0.00000932
+gu	2782	50	0.01265057	0.00009632	0.00000834
+x	6717	50	0.01225731	0.00017111	0.00001012
+y	16765	50	0.01484945	0.00034417	0.00001550
+z	8780	50	0.02046143	0.00022321	0.00002299
+aa	718	50	0.01468859	0.00006324	0.00001859
+az	889	50	0.01427802	0.00006648	0.00001071
+za	1718	50	0.02400574	0.00009942	0.00001270
+zz	162	50	0.02502478	0.00007628	0.00001813
+zqzqwwx	0	50	0.01862618	0.00007225	0.00000570
+size in bytes=38204230	 for BruteAutocomplete
+size in bytes=38204230	 for BinarySearchAutocomplete
+size in bytes=475893648	 for HashListAutocomplete
+		
+--------------------------------
+
+Paste results for # matches = 10000 with alexa.txt
+
+init time: 0.7317	for BruteAutocomplete
+init time: 2.617	for BinarySearchAutocomplete
+init time: 17.82	for HashListAutocomplete
+search	size	#match	BruteAutoc	BinarySear	HashListAu
+	1000000	10000	0.05759837	0.07974449	0.00048035
+	1000000	10000	0.02153570	0.11323803	0.00001347
+a	69464	10000	0.01985815	0.00904489	0.00001326
+a	69464	10000	0.02279446	0.00899321	0.00001397
+b	56037	10000	0.02023108	0.00858895	0.00001501
+c	65842	10000	0.01970941	0.01036967	0.00001424
+g	37792	10000	0.02055487	0.00698775	0.00001504
+ga	6664	10000	0.02361980	0.00175165	0.00001066
+go	6953	10000	0.02148194	0.00181464	0.00001446
+gu	2782	10000	0.02044619	0.00066211	0.00000961
+x	6717	10000	0.02153318	0.00191712	0.00001125
+y	16765	10000	0.01912535	0.00421443	0.00001212
+z	8780	10000	0.01842983	0.00238624	0.00001148
+aa	718	10000	0.02385903	0.00022268	0.00002341
+az	889	10000	0.01686947	0.00018286	0.00000879
+za	1718	10000	0.01725286	0.00052279	0.00001035
+zz	162	10000	0.01576184	0.00006626	0.00004979
+zqzqwwx	0	10000	0.03337131	0.00007846	0.00000599
+size in bytes=38204230	 for BruteAutocomplete
+size in bytes=38204230	 for BinarySearchAutocomplete
+size in bytes=475893648	 for HashListAutocomplete
+
+
+Explain results: does number of matches have an effect
+on the runtime?	
+
+No, increasing the number of matches to 10000 does not have an observable impact on
+the runtime. The number of matches doesn't matter because you are going through each
+term either way, no matter what k is. For BinarySearchAutocomplete and BruteAutocomplete, 
+we are adding terms k times using a LinkedList, so the runtime is O(1) because .add() for 
+LinkedLists is O(1). For HashListAutocomplete, we are cutting the list at the kth value 
+using an ArrayList, and accessing a specific index in ArrayList is O(1). Therefore, 
+increasing the matches to 10000 has no impact on runtime complexity for any of the runtimes 
+because they all do not depend on k.
+
+--------------------------------
+
+Explain why the last for loop in BruteAutocomplete.topMatches uses a LinkedList 
+(and not an ArrayList) AND why the PriorityQueue uses Term.WeightOrder to get 
+the top k heaviest matches -- rather than using Term.ReverseWeightOrder.
+
+LinkedLists are more efficient for .add() and .remove() methods because it is O(1),
+but .add() and .remove() for ArrayLists is O(n). For a LinkedList you just add the 
+term as a node to the front, but for an ArrayList you have to shift the entire 
+ArrayList one over after you add the term as the first element in the ArrayList.
+
+The Priority Queue uses Term.WeightOrder because PriorityQueues remove from the front,
+so when you use .addFirst(), you're adding the smallest weight terms first, and adding
+larger and larger weights to the front of that, resulting in a list that is sorted
+from highest to lowest weight.
+
+--------------------------------
+
+Explain why HashListAutocomplete uses more memory than the 
+other Autocomplete implementations. Be brief.
+
+HashListAutocomplete uses more memory because it stores all the prefixes and 
+corresponding terms in a HashMap. You store multiple copies of each term, once for 
+each substring prefix it has. The other Autocomplete implementations just have one 
+copy of each term, and searches through all the terms every time. They are not as
+efficient as HashList but they use less memory. 
